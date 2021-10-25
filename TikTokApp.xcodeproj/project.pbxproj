@@ -14,6 +14,12 @@
 		3ECE0A422722BE1800E02446 /* TikTokAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE0A412722BE1800E02446 /* TikTokAppTests.swift */; };
 		3ECE0A4C2722BE1800E02446 /* TikTokAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE0A4B2722BE1800E02446 /* TikTokAppUITests.swift */; };
 		3ECE0A4E2722BE1800E02446 /* TikTokAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE0A4D2722BE1800E02446 /* TikTokAppUITestsLaunchTests.swift */; };
+		3ECE0A60272302B900E02446 /* 4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE0A5A272302B800E02446 /* 4.mp4 */; };
+		3ECE0A61272302B900E02446 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE0A5B272302B900E02446 /* 2.mp4 */; };
+		3ECE0A62272302B900E02446 /* 6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE0A5C272302B900E02446 /* 6.mp4 */; };
+		3ECE0A63272302B900E02446 /* 5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE0A5D272302B900E02446 /* 5.mp4 */; };
+		3ECE0A64272302B900E02446 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE0A5E272302B900E02446 /* 3.mp4 */; };
+		3ECE0A65272302B900E02446 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE0A5F272302B900E02446 /* 1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		3ECE0A472722BE1800E02446 /* TikTokAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikTokAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECE0A4B2722BE1800E02446 /* TikTokAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokAppUITests.swift; sourceTree = "<group>"; };
 		3ECE0A4D2722BE1800E02446 /* TikTokAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3ECE0A5A272302B800E02446 /* 4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.mp4; sourceTree = "<group>"; };
+		3ECE0A5B272302B900E02446 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
+		3ECE0A5C272302B900E02446 /* 6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.mp4; sourceTree = "<group>"; };
+		3ECE0A5D272302B900E02446 /* 5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.mp4; sourceTree = "<group>"; };
+		3ECE0A5E272302B900E02446 /* 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.mp4; sourceTree = "<group>"; };
+		3ECE0A5F272302B900E02446 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,12 @@
 		3ECE0A242722BE1600E02446 = {
 			isa = PBXGroup;
 			children = (
+				3ECE0A5F272302B900E02446 /* 1.mp4 */,
+				3ECE0A5B272302B900E02446 /* 2.mp4 */,
+				3ECE0A5E272302B900E02446 /* 3.mp4 */,
+				3ECE0A5A272302B800E02446 /* 4.mp4 */,
+				3ECE0A5D272302B900E02446 /* 5.mp4 */,
+				3ECE0A5C272302B900E02446 /* 6.mp4 */,
 				3ECE0A2F2722BE1600E02446 /* TikTokApp */,
 				3ECE0A402722BE1800E02446 /* TikTokAppTests */,
 				3ECE0A4A2722BE1800E02446 /* TikTokAppUITests */,
@@ -231,8 +249,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECE0A60272302B900E02446 /* 4.mp4 in Resources */,
 				3ECE0A382722BE1800E02446 /* Preview Assets.xcassets in Resources */,
+				3ECE0A62272302B900E02446 /* 6.mp4 in Resources */,
+				3ECE0A63272302B900E02446 /* 5.mp4 in Resources */,
+				3ECE0A61272302B900E02446 /* 2.mp4 in Resources */,
+				3ECE0A65272302B900E02446 /* 1.mp4 in Resources */,
 				3ECE0A352722BE1800E02446 /* Assets.xcassets in Resources */,
+				3ECE0A64272302B900E02446 /* 3.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
