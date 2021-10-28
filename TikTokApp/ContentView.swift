@@ -108,7 +108,7 @@ struct Home: View {
                             }
                         }
                     }
-                    .padding(.bottom, 55)
+                    .padding(.bottom, 30)
                     .padding(.trailing)
                 }
                 HStack(spacing: 0) {
@@ -161,7 +161,7 @@ struct Home: View {
                             .foregroundColor(self.index == 3 ? .white : .white.opacity(0.35))
                             .padding(.horizontal)
                     }
-                }.padding(.horizontal)
+                }.padding(UIDevice.hasNotch ? .horizontal : .all)
             }
             .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0 + 5)
@@ -182,7 +182,7 @@ struct PlayerView: View {
                 ZStack {
                     Player(player: video.player)
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                        .offset(y: -6.66)
+                        .offset(y: UIDevice.hasNotch ? -8 : -10)
                         .onTapGesture {
                             changePlayingState(video)
                         }
@@ -272,10 +272,6 @@ struct PlayerScrollView: UIViewRepresentable {
     
     func updateUIView(_ uiView: UIScrollView, context: Context) {
         uiView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat(self.data.count))
-        
-        for index in 0..<uiView.subviews.count {
-            uiView.subviews[index].frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat(self.data.count))
-        }
     }
     
     class Coordinator: NSObject, UIScrollViewDelegate {
@@ -303,4 +299,10 @@ struct PlayerScrollView: UIViewRepresentable {
             }
         }
     }
+}
+
+extension UIDevice {
+    static var hasNotch: Bool {
+        return (UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0) > 0
+   }
 }
