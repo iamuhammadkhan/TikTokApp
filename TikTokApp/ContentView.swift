@@ -235,12 +235,6 @@ struct Player: UIViewControllerRepresentable {
     }
 }
 
-class Host: UIHostingController<ContentView> {
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-}
-
 struct Video: Identifiable {
     let id: Int
     let player: AVPlayer
